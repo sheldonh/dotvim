@@ -2,12 +2,22 @@ Designed to work with gnome-terminal set to use a customized version of the
 White On Black schema, with Text color set to #E6E1DC and Background color
 set to #2B2B2B, and the Tango palette selected.
 
-Remember to symlink vimrc into position, e.g.
+Once the gnome-terminal changes have been made, I do this to bang copy my
+vim config onto a new workstation:
 
-	cd $HOME && ln -s .vim/vimrc .vimrc
+	cd $HOME
+	rm -rf .vimrc .vim
+	git clone git://github.com/sheldonh/dotvim.git .vim
+	ln -s .vim/vimrc .vimrc
+	cd .vim
+	git submodules sync
+	git submodules update
+	( cd bundle/command-t && rake make )
 
-Command-T requires some compilation, and doesn't like being linked against a
-different version of ruby from the one against which Fedora's vim-enhanced was
-linked. e.g.
+The command-t native extension build is a little tricky.  The version of
+Ruby used to build the native extension should match the version of Ruby
+against which vim is linked.  On a Fedora 15 workstation using the
+vim-enhanced package (linked against ruby-1.8.7) with multiple versions
+of ruby installed for my user with rvm, I do this to build the extension:
 
-	cd bundle/command-t && rvm 1.8.7 rake make
+	( cd bundle/command-t && rvm 1.8.7 rake make )
