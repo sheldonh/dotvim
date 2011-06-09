@@ -5,3 +5,9 @@ set to #2B2B2B, and the Tango palette selected.
 Remember to symlink vimrc into position, e.g.
 
 	cd $HOME && ln -s .vim/vimrc .vimrc
+
+Command-T requires some compilation, and doesn't like being linked against a
+different version of ruby from the one against which Fedora's vim-enhanced was
+linked. e.g.
+
+	cd bundle/command-t && rvm 1.8.7 rake make
