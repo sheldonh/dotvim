@@ -1,0 +1,7 @@
+Designed to work with gnome-terminal set to use a customized version of the
+White On Black schema, with Text color set to #E6E1DC and Background color
+set to #2B2B2B, and the Tango palette selected.
+
+Remember to symlink vimrc into position, e.g.
+
+	cd $HOME && ln -s .vim/vimrc .vimrc
