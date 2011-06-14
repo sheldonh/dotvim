@@ -10,8 +10,8 @@ vim config onto a new workstation:
 	git clone git://github.com/sheldonh/dotvim.git .vim
 	ln -s .vim/vimrc .vimrc
 	cd .vim
-	git submodules sync
-	git submodules update
+	git submodule sync
+	git submodule update
 
 	cd bundle/command-t
 	if type -p rvm; then
