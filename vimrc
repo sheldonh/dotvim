@@ -11,7 +11,7 @@ nnoremap <C-w>t :tabnew<CR>
 
 set bg=dark
 if $COLORTERM=='gnome-terminal'
-	set term=gnome-256color
+	set term=xterm-256color
 	colorscheme railscasts
 else
 	colorscheme default
