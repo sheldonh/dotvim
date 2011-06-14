@@ -7,6 +7,8 @@ filetype plugin indent on
 
 command -bar -nargs=1 OpenURL :!gnome-open <args>
 
+nnoremap <C-w>t :tabnew<CR>
+
 set bg=dark
 if $COLORTERM=='gnome-terminal'
 	set term=gnome-256color
