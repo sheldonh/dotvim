@@ -23,6 +23,10 @@ vim config onto a new workstation:
 	  rake make
 	fi
 
+If you're using your distro's ruby, be sure to install your distro's
+ruby development headers package (e.g. ruby-devel or ruby-dev) before
+trying to build the command-t native extension.
+
 The command-t native extension build is a little tricky.  The version of
 Ruby used to build the native extension should match the version of Ruby
 against which vim is linked.  On my Fedora 15 workstations, I usually
