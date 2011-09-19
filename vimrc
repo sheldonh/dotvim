@@ -16,3 +16,5 @@ if $COLORTERM=='gnome-terminal'
 else
 	colorscheme default
 endif
+
+set colorcolumn=132
