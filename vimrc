@@ -17,4 +17,16 @@ else
 	colorscheme default
 endif
 
-set colorcolumn=132
+augroup myfiletypes
+autocmd!
+autocmd FileType ruby,eruby,yaml,cucumber set sw=2 st=2 et
+augroup END
+
+highlight LineNr cterm=none ctermfg=darkgray
+highlight StatusLine cterm=none ctermbg=darkgray
+highlight ColorColumn cterm=none ctermbg=darkgray
+
+set colorcolumn=133
+set laststatus=2
+set nonumber
+set statusline=%{fugitive#statusline()}%=[%f][%c,%l][%P]
