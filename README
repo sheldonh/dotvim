@@ -1,9 +1,12 @@
 Designed to work with gnome-terminal set to use a customized version of the
 White On Black schema, with Text color set to #E6E1DC and Background color
-set to #2B2B2B, and the Tango palette selected.
+set to #2B2B2B, and the Tango palette selected.  There's a gnome-terminal
+configuration file in this repo:
 
-Once the gnome-terminal changes have been made, I do this to bang copy my
-vim config onto a new workstation:
+	https://github.com/sheldonh/dotfiles
+
+Once the gnome-terminal changes have been made, I do this to bang my vim
+config onto a new workstation:
 
 	cd $HOME
 	rm -rf .vimrc .vim
