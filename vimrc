@@ -8,7 +8,8 @@ filetype plugin indent on
 command -bar -nargs=1 OpenURL :!gnome-open <args>
 
 nnoremap <C-w>t :tabnew<CR>
-nnoremap ,s :exec "!rspec -cfs %:".line(".")<CR>
+nnoremap ,s :exec "!clear; rspec -cfs %:".line(".")<CR>
+nnoremap ,S :exec "!clear; rspec -cfs %"<CR>
 
 set bg=dark
 if $COLORTERM=='gnome-terminal'
