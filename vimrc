@@ -21,7 +21,7 @@ endif
 
 augroup myfiletypes
 autocmd!
-autocmd FileType ruby,eruby,yaml,cucumber set sw=2 st=2 et
+autocmd FileType ruby,eruby,yaml,cucumber set sw=2 st=2 et foldmethod=indent foldnestmax=10 nofoldenable foldlevel=1
 augroup END
 
 highlight LineNr cterm=none ctermfg=darkgray
