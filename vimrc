@@ -24,11 +24,14 @@ autocmd!
 autocmd FileType ruby,eruby,yaml,cucumber set sw=2 st=2 et foldmethod=indent foldnestmax=10 nofoldenable foldlevel=1
 augroup END
 
+if version >= 730
+	set colorcolumn=133
+	highlight ColorColumn cterm=none ctermbg=darkgray
+end
+
 highlight LineNr cterm=none ctermfg=darkgray
 highlight StatusLine cterm=none ctermbg=darkgray
-highlight ColorColumn cterm=none ctermbg=darkgray
 
-set colorcolumn=133
 set laststatus=2
 set nonumber
 set statusline=%{fugitive#statusline()}%=[%f][%c,%l][%P]
