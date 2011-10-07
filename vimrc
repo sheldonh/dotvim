@@ -34,4 +34,4 @@ highlight StatusLine cterm=none ctermbg=darkgray
 
 set laststatus=2
 set nonumber
-set statusline=%{fugitive#statusline()}%=[%f][%c,%l][%P]
+set statusline=%{fugitive#statusline()}%=[%f:%l][%c]%m%r[%P]
