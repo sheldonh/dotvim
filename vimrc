@@ -7,7 +7,7 @@ filetype plugin indent on
 
 command -bar -nargs=1 OpenURL :!gnome-open <args>
 
-let mapleader = ","
+let mapleader = " "
 
 nnoremap <C-w>t :tabnew<CR>
 
