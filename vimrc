@@ -53,3 +53,6 @@ set title
 set ignorecase
 set smartcase
 set scrolloff=3
+
+" Ignore generated rails documentation
+set wildignore+=doc/app
