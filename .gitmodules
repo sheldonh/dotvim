@@ -18,7 +18,7 @@
 	url = git://github.com/tpope/vim-fugitive.git
 [submodule "bundle/vim-rspec-switcher"]
 	path = bundle/vim-rspec-switcher
-	url = https://github.com/rorymckinley/vim-rspec-switcher.git
+	url = https://github.com/sheldonh/vim-rspec-switcher.git
 [submodule "bundle/vim-ruby-refactoring"]
 	path = bundle/vim-ruby-refactoring
 	url = https://github.com/ecomba/vim-ruby-refactoring.git
