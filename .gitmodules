@@ -16,12 +16,12 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
-[submodule "bundle/vim-ruby-refactoring"]
-	path = bundle/vim-ruby-refactoring
-	url = https://github.com/ecomba/vim-ruby-refactoring.git
-[submodule "bundle/vim-rspec-switcher"]
-	path = bundle/vim-rspec-switcher
-	url = git@github.com:sheldonh/vim-rspec-switcher.git
 [submodule "bundle/vim-cucumber-runner"]
 	path = bundle/vim-cucumber-runner
 	url = git@github.com:sheldonh/vim-cucumber-runner.git
+[submodule "bundle/vim-rspec-switcher"]
+	path = bundle/vim-rspec-switcher
+	url = git@github.com:sheldonh/vim-rspec-switcher.git
+[submodule "bundle/vim-ruby-refactoring"]
+	path = bundle/vim-ruby-refactoring
+	url = git@github.com:sheldonh/vim-ruby-refactoring.git
