@@ -21,6 +21,8 @@ nmap <silent> <leader>n :silent :nohlsearch<CR>
 set listchars=tab:>-,trail:·,eol:$
 nmap <silent> <leader>w :set nolist!<CR>
 
+nmap <leader>f :CommandTFlush<CR>
+
 set bg=dark
 if $COLORTERM=='gnome-terminal'
 	set term=xterm-256color
