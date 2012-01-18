@@ -23,6 +23,10 @@ nmap <silent> <leader>w :set nolist!<CR>
 
 nmap <leader>f :CommandTFlush<CR>
 
+imap <C-o> <Esc>o
+imap <C-O> <Esc>O
+imap <C-j> <Esc>Ji
+
 set bg=dark
 if $COLORTERM=='gnome-terminal'
 	set term=xterm-256color
