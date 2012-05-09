@@ -21,7 +21,7 @@ config onto a new workstation:
 	  vim=$(which vim)
 	  libruby=$(ldd $vim | awk '$1 ~ /libruby/ {print $3}')
 	  rubyversion=$(strings $libruby | grep '^1\.[89]\.' | tail -n 1)
-	  rvm $rubyversion rake make
+	  BUNDLER_BLACKLIST=rake rvm $rubyversion do rake make
 	else
 	  rake make
 	fi
