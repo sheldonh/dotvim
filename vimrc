@@ -37,7 +37,7 @@ endif
 
 augroup myfiletypes
 autocmd!
-autocmd FileType ruby,eruby,yaml,cucumber set sw=2 st=2 et foldmethod=indent foldnestmax=10 nofoldenable foldlevel=1
+autocmd FileType ruby,eruby,yaml,cucumber,coffee,puppet set sw=2 st=2 ai si et foldmethod=indent foldnestmax=10 nofoldenable foldlevel=1
 augroup END
 
 if version >= 730
