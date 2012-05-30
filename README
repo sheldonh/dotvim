@@ -18,10 +18,14 @@ config onto a new workstation:
 
 	cd bundle/command-t
 	if type -p rvm; then
+	  rvm gemset create command-t
+	  rvm gemset use command-t
+	  bundle install
 	  vim=$(which vim)
 	  libruby=$(ldd $vim | awk '$1 ~ /libruby/ {print $3}')
 	  rubyversion=$(strings $libruby | grep '^1\.[89]\.' | tail -n 1)
-	  BUNDLER_BLACKLIST=rake rvm $rubyversion do rake make
+	  rvm $rubyversion do rake make
+	  rvm gemset delete command-t
 	else
 	  rake make
 	fi
@@ -32,7 +36,5 @@ trying to build the command-t native extension.
 
 The command-t native extension build is a little tricky.  The version of
 Ruby used to build the native extension should match the version of Ruby
-against which vim is linked.  On my Fedora 15 workstations, I usually
-develop against ruby-1.9.2 using rvm, but the vim-enhanced package is
-linked against libruby-1.8.7.
+against which vim is linked.
 
