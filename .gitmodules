@@ -31,3 +31,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/file-line"]
+	path = bundle/file-line
+	url = git://github.com/sheldonh/file-line.git
