@@ -34,3 +34,6 @@
 [submodule "bundle/file-line"]
 	path = bundle/file-line
 	url = git://github.com/sheldonh/file-line.git
+[submodule "bundle/ShowTrailingWhitespace"]
+	path = bundle/ShowTrailingWhitespace
+	url = https://github.com/vim-scripts/ShowTrailingWhitespace
