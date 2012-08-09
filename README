@@ -17,18 +17,16 @@ config onto a new workstation:
 	git submodule update --init
 
 	cd bundle/command-t
+	mv Gemfile Gemfile.bak
 	if type -p rvm; then
-	  rvm gemset create command-t
-	  rvm gemset use command-t
-	  bundle install
 	  vim=$(which vim)
 	  libruby=$(ldd $vim | awk '$1 ~ /libruby/ {print $3}')
 	  rubyversion=$(strings $libruby | grep '^1\.[89]\.' | tail -n 1)
 	  rvm $rubyversion do rake make
-	  rvm gemset delete command-t
 	else
 	  rake make
 	fi
+	mv Gemfile.bak Gemfile
 
 If you're using your distro's ruby, be sure to install your distro's
 ruby development headers package (e.g. ruby-devel or ruby-dev) before
