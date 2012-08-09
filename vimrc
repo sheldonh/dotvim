@@ -27,23 +27,20 @@ imap <C-o> <Esc>o
 imap <C-O> <Esc>O
 imap <C-j> <Esc>Ji
 
-set bg=dark
-if $COLORTERM=='gnome-terminal'
-	set term=xterm-256color
-	colorscheme railscasts
-else
-	colorscheme default
-endif
+" gnome-terminal is special: http://vim.wikia.com/wiki/256_colors_in_vim
+"if $COLORTERM=='gnome-terminal'
+"	set term=gnome-256color
+"endif
+syntax enable
+colorscheme solarized
 
 augroup myfiletypes
 autocmd!
 autocmd FileType ruby,eruby,yaml,cucumber,coffee,puppet set sw=2 st=2 ai si et foldmethod=indent foldnestmax=10 nofoldenable foldlevel=1
 augroup END
 
-if version >= 730
-	set colorcolumn=133
-	highlight ColorColumn cterm=none ctermbg=darkgray
-end
+"set colorcolumn=133
+"highlight ColorColumn cterm=none ctermbg=darkgray
 
 set laststatus=2
 set statusline=%{fugitive#statusline()}%=[%f:%l][%c]%m%r[%P]
