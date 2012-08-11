@@ -32,7 +32,7 @@ imap <C-j> <Esc>Ji
 "	set term=gnome-256color
 "endif
 syntax enable
-colorscheme solarized
+colorscheme railscasts
 
 augroup myfiletypes
 autocmd!
