@@ -28,9 +28,9 @@ imap <C-O> <Esc>O
 imap <C-j> <Esc>Ji
 
 " gnome-terminal is special: http://vim.wikia.com/wiki/256_colors_in_vim
-"if $COLORTERM=='gnome-terminal'
-"	set term=gnome-256color
-"endif
+if $COLORTERM=='gnome-terminal'
+	set term=gnome-256color
+endif
 syntax enable
 colorscheme railscasts
 
@@ -39,8 +39,8 @@ autocmd!
 autocmd FileType ruby,eruby,yaml,cucumber,coffee,puppet set sw=2 st=2 ai si et foldmethod=indent foldnestmax=10 nofoldenable foldlevel=1
 augroup END
 
-"set colorcolumn=133
-"highlight ColorColumn cterm=none ctermbg=darkgray
+"set colorcolumn=121
+highlight ColorColumn cterm=none ctermbg=darkgray
 
 set laststatus=2
 set statusline=%{fugitive#statusline()}%=[%f:%l][%c]%m%r[%P]
