@@ -10,9 +10,6 @@
 [submodule "bundle/Puppet-Syntax-Highlighting"]
 	path = bundle/Puppet-Syntax-Highlighting
 	url = git://github.com/vim-scripts/Puppet-Syntax-Highlighting.git
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = git://git.wincent.com/command-t.git
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
