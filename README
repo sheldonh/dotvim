@@ -1,11 +1,11 @@
-Designed to work with gnome-terminal set to use a customized version of the
-White On Black schema, with Text color set to #E6E1DC and Background color
-set to #2B2B2B, and the Tango palette selected.  There's a gnome-terminal
-configuration file in this repo:
+Originally designed to work with gnome-terminal set to use a customized version
+of the White On Black schema, with Text color set to #E6E1DC and Background
+color set to #2B2B2B, and the Tango palette selected.  There's a compatible
+KDE Konsole configuration in this repo:
 
 	https://github.com/sheldonh/dotfiles
 
-Once the gnome-terminal changes have been made, I do this to bang my vim
+Once the terminal colour changes have been made, I do this to bang my vim
 config onto a new workstation:
 
 	cd $HOME
@@ -16,23 +16,6 @@ config onto a new workstation:
 	git submodule sync
 	git submodule update --init
 
-	cd bundle/command-t
-	mv Gemfile Gemfile.bak
-	if type -p rvm; then
-	  vim=$(which vim)
-	  libruby=$(ldd $vim | awk '$1 ~ /libruby/ {print $3}')
-	  rubyversion=$(strings $libruby | grep '^1\.[89]\.' | tail -n 1)
-	  rvm $rubyversion do rake make
-	else
-	  rake make
-	fi
-	mv Gemfile.bak Gemfile
-
-If you're using your distro's ruby, be sure to install your distro's
-ruby development headers package (e.g. ruby-devel or ruby-dev) before
-trying to build the command-t native extension.
-
-The command-t native extension build is a little tricky.  The version of
-Ruby used to build the native extension should match the version of Ruby
-against which vim is linked.
+This is all a lot simpler now that Fedora 18 ships with the vim-command-t
+package.
 
