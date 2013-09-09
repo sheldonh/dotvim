@@ -27,6 +27,10 @@ imap <C-o> <Esc>o
 imap <C-O> <Esc>O
 imap <C-j> <Esc>Ji
 
+" Clojure REPL
+nnoremap <leader>E :%Eval<CR>
+nnoremap <leader>e :%Eval<CR>
+
 " gnome-terminal is special: http://vim.wikia.com/wiki/256_colors_in_vim
 if $COLORTERM=='gnome-terminal'
 	set term=gnome-256color
