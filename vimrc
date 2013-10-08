@@ -27,6 +27,10 @@ imap <C-o> <Esc>o
 imap <C-O> <Esc>O
 imap <C-j> <Esc>Ji
 
+" ruby specs
+nnoremap <leader>s :exec "!clear; bundle exec rspec --drb -cfs " . bufname("%") . ":" . line(".")<CR>
+nnoremap <leader>S :exec "!clear; bundle exec rspec --drb -cfs " . bufname("%")<CR>
+
 " Clojure REPL
 nnoremap <leader>E :%Eval<CR>
 nnoremap <leader>e :%Eval<CR>

@@ -16,9 +16,6 @@
 [submodule "bundle/vim-cucumber-runner"]
 	path = bundle/vim-cucumber-runner
 	url = git://github.com/sheldonh/vim-cucumber-runner.git
-[submodule "bundle/vim-rspec-switcher"]
-	path = bundle/vim-rspec-switcher
-	url = git://github.com/sheldonh/vim-rspec-switcher.git
 [submodule "bundle/vim-ruby-refactoring"]
 	path = bundle/vim-ruby-refactoring
 	url = git://github.com/sheldonh/vim-ruby-refactoring.git
