@@ -47,6 +47,8 @@ autocmd!
 autocmd FileType ruby,eruby,yaml,cucumber,coffee,puppet set sw=2 st=2 ai et foldmethod=indent foldnestmax=10 nofoldenable foldlevel=1
 augroup END
 
+au BufRead,BufNewFile *.md set filetype=markdown
+
 "set colorcolumn=121
 highlight ColorColumn cterm=none ctermbg=darkgray
 
