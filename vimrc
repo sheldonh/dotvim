@@ -36,7 +36,7 @@ nnoremap <leader>E :%Eval<CR>
 nnoremap <leader>e :%Eval<CR>
 
 " gnome-terminal is special: http://vim.wikia.com/wiki/256_colors_in_vim
-if $COLORTERM=='gnome-terminal'
+if $XDG_SESSION_DESKTOP=='gnome'
 	set term=gnome-256color
 endif
 syntax enable
