@@ -16,6 +16,3 @@ config onto a new workstation:
 	git submodule sync
 	git submodule update --init
 
-This is all a lot simpler now that Fedora 18 ships with the vim-command-t
-package.
-
