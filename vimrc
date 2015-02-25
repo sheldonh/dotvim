@@ -24,6 +24,8 @@ nmap <silent> <leader>w :set nolist!<CR>
 nmap <leader>t :CtrlP<CR>
 nmap <leader>f :CtrlPClearCache<CR>
 
+nnoremap <leader>p :set invpaste paste?<CR>
+
 imap <C-o> <Esc>o
 imap <C-O> <Esc>O
 imap <C-j> <Esc>Ji
