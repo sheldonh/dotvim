@@ -60,6 +60,8 @@ set statusline=%{fugitive#statusline()}%=[%f:%l][%c]%m%r[%P]
 highlight LineNr cterm=none ctermfg=darkgray
 highlight StatusLine cterm=none ctermbg=darkgray
 
+autocmd BufWritePre * :silent! call mkdir(expand('%:p:h'), 'p')
+
 set nonumber
 set hidden
 set history=1000
