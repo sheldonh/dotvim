@@ -42,6 +42,10 @@ nnoremap <leader>e :%Eval<CR>
 if $XDG_SESSION_DESKTOP=='gnome'
 	set term=gnome-256color
 endif
+" xfce is less special
+if $COLORTERM=='xfce4-terminal'
+	set term=xterm-256color
+endif
 syntax enable
 colorscheme railscasts
 
