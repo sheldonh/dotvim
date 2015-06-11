@@ -1,11 +1,28 @@
 set nocompatible
-
 filetype off
-call pathogen#infect()
-call pathogen#helptags()
-filetype plugin indent on
 
-command -bar -nargs=1 OpenURL :!gnome-open <args>
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'bogado/file-line'
+Plugin 'kien/ctrlp.vim'
+Plugin 'mileszs/ack.vim'
+Plugin 'vim-scripts/matchit.zip'
+Plugin 'vim-scripts/ShowTrailingWhitespace'
+Plugin 'tpope/vim-fugitive'
+
+Plugin 'bkad/vim-terraform'
+Plugin 'fatih/vim-go'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'scrooloose/syntastic'
+Plugin 'sheldonh/vim-cucumber-runner'
+Plugin 'tpope/vim-cucumber'
+Plugin 'vim-scripts/Puppet-Syntax-Highlighting'
+
+call vundle#end()
+filetype plugin indent on
 
 let mapleader = " "
 
