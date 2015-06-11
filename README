@@ -1,9 +1,6 @@
 Originally designed to work with gnome-terminal set to use a customized version
 of the White On Black schema, with Text color set to #E6E1DC and Background
-color set to #2B2B2B, and the Tango palette selected.  There's a compatible
-KDE Konsole configuration in this repo:
-
-	https://github.com/sheldonh/dotfiles
+color set to #2B2B2B, and the Tango palette selected.
 
 Once the terminal colour changes have been made, I do this to bang my vim
 config onto a new workstation:
@@ -12,7 +9,4 @@ config onto a new workstation:
 	rm -rf .vimrc .vim
 	git clone git://github.com/sheldonh/dotvim.git .vim
 	ln -s .vim/vimrc .vimrc
-	cd .vim
-	git submodule sync
-	git submodule update --init
 
