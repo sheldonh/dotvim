@@ -6,14 +6,13 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'bogado/file-line'
-Plugin 'kien/ctrlp.vim'
+Plugin 'kopischke/vim-fetch'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/ShowTrailingWhitespace'
 Plugin 'tpope/vim-fugitive'
 
-Plugin 'bkad/vim-terraform'
 Plugin 'fatih/vim-go'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'scrooloose/syntastic'
