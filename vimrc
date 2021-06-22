@@ -82,6 +82,7 @@ highlight StatusLine cterm=none ctermbg=darkgray
 
 autocmd BufWritePre * :silent! call mkdir(expand('%:p:h'), 'p')
 
+set nofixeol
 set nonumber
 set hidden
 set history=1000
